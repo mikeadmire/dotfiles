@@ -1,0 +1,21 @@
+let mapleader = ","
+
+map <Leader>d :NERDTreeToggle<CR>
+
+if has("gui_running")
+  set guifont=DejaVu\ Sans\ Mono:h14.00
+  set lines=50
+  set columns=150
+  set transparency=10  "only works in MacVim
+endif
+
+" Run shortcut for different file types
+au FileType perl map <leader>r :!perl %<CR>
+au FileType php map <leader>r :!php %<CR>
+au FileType python map <leader>r :!python %<CR>
+au FileType ruby map <leader>r :!ruby %<CR>
+au FileType coffee map <leader>r :!coffee %<CR>
+
+au FileType coffee map <leader>c :!coffee -c %<CR>
+
+au FileType coffee map <leader>p :!coffee -p %<CR>
