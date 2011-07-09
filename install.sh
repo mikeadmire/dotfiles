@@ -1,5 +1,8 @@
 cd ~
-mv ~/dotfiles ~/dotfiles.old
+if [ -d ~/dotfiles ]
+then
+  mv ~/dotfiles ~/dotfiles.old
+fi
 git clone git://github.com/mikeadmire/dotfiles.git ~/dotfiles
 for i in .bash_aliases .bash_profile .gemrc .gvimrc.local .janus.rake .bashrc .vimrc.local
 do
