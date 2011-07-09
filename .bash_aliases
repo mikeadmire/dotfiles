@@ -64,14 +64,6 @@ alias gm='git pull .' # git merge (usage: gm branchname)
 alias gsr='git svn rebase'
 alias gsdc='git svn dcommit'
 
-# Janus aliases
-function janus-update {
-  git clone git@github.com:mikeadmire/janus.git ~/.vim
-  cd ~/.vim
-  rake
-  cd -
-}
-
 # tmux aliases
 alias t='tmux -u'
 
@@ -81,6 +73,14 @@ alias bi="b install --path vendor"
 alias bu="b update"
 alias be="b exec"
 alias binit="bi && b package && echo 'vendor/ruby' >> .gitignore"
+
+# Janus aliases
+function update_janus {
+  git clone git@github.com:mikeadmire/janus.git ~/.vim
+  cd ~/.vim
+  rake
+  cd -
+}
 
 # dotfiles
 alias update_dotfiles='curl https://raw.github.com/mikeadmire/dotfiles/master/install.sh -o - | sh'
