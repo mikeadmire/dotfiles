@@ -82,6 +82,9 @@ alias bu="b update"
 alias be="b exec"
 alias binit="bi && b package && echo 'vendor/ruby' >> .gitignore"
 
+# dotfiles
+alias update_dotfiles='curl https://raw.github.com/mikeadmire/dotfiles/master/install.sh -o - | sh'
+
 
 if [ -f ~/.bash_aliases.private ]; then source ~/.bash_aliases.private; fi
 
