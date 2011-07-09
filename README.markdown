@@ -1,6 +1,6 @@
-# dotfiles: Mike's dotfiles used on his Mac
+# dotfiles: Mike's dotfiles for Mac
 
-The dot files I use on my Mac.
+The dot files that I'm managing with this project are:
 
 * .bash_aliases
 * .bash_profile
