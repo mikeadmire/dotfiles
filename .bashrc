@@ -9,5 +9,6 @@ export CC=gcc-4.2
 
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 [[ -r $rvm_path/scripts/completion ]] && source $rvm_path/scripts/completion
+[[ -r $HOME/.nvm/nvm.sh ]] && source $HOME/.nvm/nvm.sh
 
 if [ -f ~/.bash_aliases ]; then source ~/.bash_aliases; fi
