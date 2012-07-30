@@ -5,7 +5,7 @@ then
   mv ~/dotfiles ~/dotfiles.$date
 fi
 git clone git://github.com/mikeadmire/dotfiles.git ~/dotfiles
-for i in .bash_aliases .bash_profile .gemrc .gvimrc.local .janus.rake .bashrc .vimrc.local
+for i in .bash_aliases .bash_profile .gemrc .bashrc
 do
   if [ -e $i ] || [ -h $i ]
   then
