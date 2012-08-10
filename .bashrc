@@ -1,3 +1,4 @@
+set -o vi
 #export RAILS_ENV=development
 export SVN_EDITOR='/usr/local/bin/vim'
 export PATH=$PATH:~/bin:/usr/local/sbin:~/bin:$HOME/.rbenv/bin
