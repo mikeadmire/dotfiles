@@ -8,3 +8,5 @@ export GOROOT=$HOME/go
 export GOARCH=amd64
 export GOOS=darwin
 ###
+
+eval "$(rbenv init -)"
