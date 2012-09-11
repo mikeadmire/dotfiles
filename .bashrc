@@ -15,4 +15,6 @@ export CC=gcc-4.2
 if [ -f ~/.bash_aliases ]; then source ~/.bash_aliases; fi
 
 if [ -f ~/dotfiles/git-completion.bash ]; then source ~/dotfiles/git-completion.bash; fi
+if [ -f ~/dotfiles/ack.bash_completion.sh ]; then source ~/dotfiles/ack.bash_completion.sh; fi
+if [ -f ~/dotfiles/todo_completion ]; then source ~/dotfiles/todo_completion; fi
 export PS1='\h:\W \u$(__git_ps1 " (\[\e[0;36m\] %s \[\e[m\])") \$ '
