@@ -7,6 +7,7 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 export CLASSPATH=$CLASSPATH:/usr/local/java_include/javamail-1.4.3/mail.jar:/usr/local/java_include/mysql-connector-java-5.1.11/mysql-connector-java-5.1.11-bin.jar
 export NODE_PATH=/usr/local/lib/node_modules
 export CC=gcc-4.2
+export GOROOT=/usr/local/go
 
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 [[ -r $rvm_path/scripts/completion ]] && source $rvm_path/scripts/completion
