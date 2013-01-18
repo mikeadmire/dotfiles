@@ -1,11 +1,7 @@
-# dotfiles: Mike's dotfiles for Mac
+# dotfiles: My dotfiles for the Mac
 
-The dot files that I'm managing with this project are:
-
-* .bash_aliases
-* .bash_profile
-* .bashrc
-* .gemrc
+This does not include my dot vim files. Those are managed
+in a seperate repo.
 
 ## Installation
 
