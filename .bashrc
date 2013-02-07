@@ -1,6 +1,6 @@
 set -o vi
 #export RAILS_ENV=development
-export EDITOR='/usr/local/bin/vim'
+export EDITOR='/usr/local/bin/mvim'
 export PATH=$PATH:~/bin:/usr/local/sbin:~/bin:$HOME/.rbenv/bin:/usr/local/share/npm/bin
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
