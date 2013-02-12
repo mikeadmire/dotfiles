@@ -1,7 +1,7 @@
 set -o vi
 #export RAILS_ENV=development
 export EDITOR='/usr/local/bin/mvim'
-export PATH=$PATH:~/bin:/usr/local/sbin:~/bin:$HOME/.rbenv/bin:/usr/local/share/npm/bin
+export PATH=$PATH:~/bin:/usr/local/sbin:~/bin::/usr/local/share/npm/bin
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
 export CLASSPATH=$CLASSPATH:/usr/local/java_include/javamail-1.4.3/mail.jar:/usr/local/java_include/mysql-connector-java-5.1.11/mysql-connector-java-5.1.11-bin.jar
