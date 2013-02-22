@@ -1,7 +1,7 @@
 set -o vi
 
-export SVN_EDITOR='/usr/local/bin/vim'
-export PATH=$PATH:~/bin:/usr/local/sbin:~/bin:/usr/local/share/npm/bin
+export EDITOR='/usr/local/bin/mvim'
+export PATH=$PATH:~/bin:/usr/local/sbin:~/bin::/usr/local/share/npm/bin
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
 export CLASSPATH=$CLASSPATH:/usr/local/java_include/javamail-1.4.3/mail.jar:/usr/local/java_include/mysql-connector-java-5.1.11/mysql-connector-java-5.1.11-bin.jar
@@ -16,3 +16,4 @@ if [ -f ~/.bash_aliases ]; then source ~/.bash_aliases; fi
 
 if [ -f ~/dotfiles/git-completion.bash ]; then source ~/dotfiles/git-completion.bash; fi
 export PS1='\h:\W \u$(__git_ps1 " (\[\e[0;36m\] %s \[\e[m\])") \$ '
+PATH=$PATH:$HOME/.rvm/bin
