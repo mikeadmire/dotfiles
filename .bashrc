@@ -1,12 +1,11 @@
 set -o vi
 
 export EDITOR='/usr/local/bin/mvim'
-export PATH=$PATH:~/bin:/usr/local/sbin:~/bin::/usr/local/share/npm/bin
+export PATH="$HOME/.rbenv/bin:$PATH:~/bin:/usr/local/sbin:~/bin::/usr/local/share/npm/bin"
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
 export NODE_PATH=/usr/local/lib/node_modules:/usr/local/share/npm/lib/node_modules
-export GOROOT=/usr/local/go
 
 [[ -r $HOME/.nvm/nvm.sh ]] && source $HOME/.nvm/nvm.sh
 
