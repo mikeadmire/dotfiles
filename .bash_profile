@@ -9,10 +9,6 @@ export GOARCH=amd64
 export GOOS=darwin
 ###
 
-eval "$(rbenv init -)"
-
 if [ -f `brew --prefix`/etc/bash_completion ]; then
       . `brew --prefix`/etc/bash_completion
 fi
-
-eval "$(rbenv init -)"

@@ -1,7 +1,7 @@
 set -o vi
 
 export EDITOR='/usr/local/bin/mvim'
-export PATH="$HOME/.rbenv/bin:$PATH:~/bin:/usr/local/sbin:~/bin:/usr/local/share/npm/bin:/usr/local/packer"
+export PATH="$PATH:~/bin:/usr/local/sbin:~/bin:/usr/local/share/npm/bin:/usr/local/packer"
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
