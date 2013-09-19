@@ -20,7 +20,7 @@ do
   ln -s ~/dotfiles/$i
 done
 
-if [ -d ~/.oh-my.zsh/custom/plugins/admire ]
+if [ -d ~/.oh-my-zsh/custom/plugins/admire ]
 then
   rm -rf ~/.oh-my-zsh/custom/plugins/admire/
   ln -s ~/dotfiles/zsh-plugins ~/.oh-my-zsh/custom/plugins/admire
