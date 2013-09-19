@@ -1,7 +1,6 @@
 date=`date "+%Y%m%d-%H%M%S"`
 cd ~
-if [ -d ~/dotfiles ]
-then
+if [ -d ~/dotfiles ]; then
   mv ~/dotfiles ~/dotfiles.$date
 fi
 git clone git://github.com/mikeadmire/dotfiles.git ~/dotfiles
@@ -20,8 +19,12 @@ do
   ln -s ~/dotfiles/$i
 done
 
-if [ -d ~/.oh-my-zsh/custom/plugins/admire ]
-then
-  rm -rf ~/.oh-my-zsh/custom/plugins/admire/
-  ln -s ~/dotfiles/zsh-plugins ~/.oh-my-zsh/custom/plugins/admire
+ZSH_PLUGIN_DIR='.oh-my-zsh/custom/plugins/admire'
+if [ -d $ZSH_PLUGIN_DIR ]; then
+  if [ -L $ZSH_PLUGIN_DIR ]; then
+    rm $ZSH_PLUGIN_DIR
+  else
+    rm -rf $ZSH_PLUGIN_DIR
+  fi
+  ln -s ~/dotfiles/zsh-plugins $ZSH_PLUGIN_DIR
 fi
