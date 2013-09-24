@@ -26,5 +26,5 @@ if [ -d $ZSH_PLUGIN_DIR ]; then
   else
     rm -rf $ZSH_PLUGIN_DIR
   fi
-  ln -s ~/dotfiles/zsh-plugins $ZSH_PLUGIN_DIR
 fi
+ln -s ~/dotfiles/zsh-plugins $ZSH_PLUGIN_DIR
