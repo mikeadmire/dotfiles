@@ -19,7 +19,7 @@ do
   ln -s ~/dotfiles/$i
 done
 
-ZSH_PLUGIN_DIR='.oh-my-zsh/custom/admire'
+ZSH_PLUGIN_DIR='.oh-my-zsh/custom/plugins'
 if [ -d $ZSH_PLUGIN_DIR ]; then
   if [ -L $ZSH_PLUGIN_DIR ]; then
     rm $ZSH_PLUGIN_DIR
