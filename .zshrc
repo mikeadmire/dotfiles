@@ -57,6 +57,10 @@ export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 ###
 
+### MySQL ###
+export MYSQL=/usr/local/opt/mysql55
+export PATH=$PATH:$MYSQL/bin
+###
 [[ -f ~/dotfiles/.bundler-exec.sh ]] && source ~/dotfiles/.bundler-exec.sh
 
 fpath=(~/.zsh/Completion $fpath)
