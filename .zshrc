@@ -52,6 +52,10 @@ export NODE_PATH=/usr/local/lib/node_modules:/usr/local/share/npm/lib/node_modul
 [[ -r $HOME/.nvm/nvm.sh ]] && source $HOME/.nvm/nvm.sh
 ###
 
+### rbenv ###
+export RBENV_ROOT=/usr/local/var/rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+###
 
 [[ -f ~/dotfiles/.bundler-exec.sh ]] && source ~/dotfiles/.bundler-exec.sh
 
