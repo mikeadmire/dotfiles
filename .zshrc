@@ -37,7 +37,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 export EDITOR='/usr/local/bin/vi'
-export PATH="$PATH:$HOME/.rvm/bin:$HOME/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/packer"
+export PATH="$PATH:$HOME/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/packer"
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
@@ -52,9 +52,6 @@ export NODE_PATH=/usr/local/lib/node_modules:/usr/local/share/npm/lib/node_modul
 [[ -r $HOME/.nvm/nvm.sh ]] && source $HOME/.nvm/nvm.sh
 ###
 
-### RVM ###
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
-###
 
 [[ -f ~/dotfiles/.bundler-exec.sh ]] && source ~/dotfiles/.bundler-exec.sh
 

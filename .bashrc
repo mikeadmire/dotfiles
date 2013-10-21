@@ -1,7 +1,7 @@
 set -o vi
 
 export EDITOR='/usr/bin/vim'
-export PATH="$PATH:$HOME/.rvm/bin:~/bin:/usr/local/sbin:~/bin:/usr/local/share/npm/bin:/usr/local/packer"
+export PATH="$PATH:~/bin:/usr/local/sbin:~/bin:/usr/local/share/npm/bin:/usr/local/packer"
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
