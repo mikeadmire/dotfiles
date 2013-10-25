@@ -36,6 +36,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+bindkey -v
 export EDITOR='/usr/local/bin/vi'
 export PATH="$PATH:$HOME/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/packer"
 export CLICOLOR=1
@@ -62,6 +63,8 @@ export MYSQL=/usr/local/opt/mysql55
 export PATH=$PATH:$MYSQL/bin
 ###
 
+### Automatically run ruby scripts with bundle exec ###
 [[ -f ~/dotfiles/.bundler-exec.sh ]] && source ~/dotfiles/.bundler-exec.sh
+###
 
 fpath=(~/.zsh/Completion $fpath)
