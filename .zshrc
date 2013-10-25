@@ -59,7 +59,7 @@ eval "$(rbenv init -)"
 ###
 
 ### MySQL ###
-export MYSQL=/usr/local/opt/mysql55
+export MYSQL=/usr/local/mysql
 export PATH=$PATH:$MYSQL/bin
 ###
 
