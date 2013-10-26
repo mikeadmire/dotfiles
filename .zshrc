@@ -58,11 +58,6 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 ###
 
-### MySQL ###
-export MYSQL=/usr/local/mysql
-export PATH=$PATH:$MYSQL/bin
-###
-
 ### Automatically run ruby scripts with bundle exec ###
 [[ -f ~/dotfiles/.bundler-exec.sh ]] && source ~/dotfiles/.bundler-exec.sh
 ###
