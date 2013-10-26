@@ -5,4 +5,9 @@ in a seperate repo.
 
 ## Installation
 
-`curl https://raw.github.com/mikeadmire/dotfiles/master/install.sh -o - | sh`
+    $ curl https://raw.github.com/mikeadmire/dotfiles/master/install.sh -o - | sh
+
+To use the global .gitignore file
+
+    $ git config --global core.excludesfile ~/.gitignore_global
+

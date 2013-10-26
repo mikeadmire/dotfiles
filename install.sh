@@ -10,7 +10,7 @@ curl -L https://github.com/gma/bundler-exec/raw/master/bundler-exec.sh > ~/dotfi
 echo "[ -f ~/dotfiles/.bundler-exec.sh ] && source ~/dotfiles/.bundler-exec.sh" >> ~/dotfiles/.bashrc
 
 # sym link dotfiles to home directory
-for i in .bash_aliases .bash_profile .gemrc .bashrc .autotest .tmux.conf .irbrc .zshrc
+for i in .bash_aliases .bash_profile .gemrc .bashrc .autotest .tmux.conf .irbrc .zshrc .gitignore_global
 do
   if [ -e $i ] || [ -h $i ]
   then
