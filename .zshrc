@@ -30,7 +30,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 #plugins=(git)
-plugins=(admire)
+plugins=(admire bundler)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -56,10 +56,6 @@ export NODE_PATH=/usr/local/lib/node_modules:/usr/local/share/npm/lib/node_modul
 ### rbenv ###
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-###
-
-### Automatically run ruby scripts with bundle exec ###
-[[ -f ~/dotfiles/.bundler-exec.sh ]] && source ~/dotfiles/.bundler-exec.sh
 ###
 
 fpath=(~/.zsh/Completion $fpath)
