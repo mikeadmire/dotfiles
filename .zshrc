@@ -58,4 +58,8 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 ###
 
+### CU Sub ###
+export PATH="$HOME/subs/bin:$PATH"
+eval "$($HOME/subs/bin/cu init -)"
+
 fpath=(~/.zsh/Completion $fpath)
