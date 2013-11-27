@@ -58,8 +58,11 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 ###
 
-### CU Sub ###
+### CaptainU Sub (cu) ###
 export PATH="$HOME/subs/bin:$PATH"
 eval "$($HOME/subs/bin/cu init -)"
+
+### Packer ###
+export PATH="$PATH:/usr/local/packer"
 
 fpath=(~/.zsh/Completion $fpath)
