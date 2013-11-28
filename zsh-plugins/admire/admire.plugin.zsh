@@ -23,6 +23,10 @@ alias update-home_bin='curl https://raw.github.com/mikeadmire/home_bin/master/in
 
 alias rake="noglob rake"
 
+# turn off autocorrect for some commands
+alias knife='nocorrect knife'
+
+
 c() { cd ~/projects/mine/$1; }
 _c() { _files -W ~/projects/mine -/; }
 compdef _c c
