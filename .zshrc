@@ -1,8 +1,6 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
-fpath=(~/.zsh/Completion $fpath)
-
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -32,7 +30,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 #plugins=(git)
-plugins=(admire bundler)
+plugins=(bundler admire)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -67,3 +65,4 @@ eval "$($HOME/subs/bin/cu init -)"
 ### Packer ###
 export PATH="$PATH:/usr/local/packer"
 
+fpath=(~/.zsh/Completion $fpath)
