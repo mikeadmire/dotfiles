@@ -6,7 +6,7 @@ fi
 git clone git://github.com/mikeadmire/dotfiles.git ~/dotfiles
 
 # sym link dotfiles to home directory
-for i in .bash_aliases .bash_profile .gemrc .bashrc .autotest .tmux.conf .irbrc .zshrc .gitignore_global
+for i in .bash_aliases .bash_profile .gemrc .bashrc .autotest .tmux.conf .irbrc .zshrc .gitignore_global .gitconfig
 do
   if [ -e $i ] || [ -h $i ]
   then

@@ -1,0 +1,8 @@
+[user]
+	name = Mike Admire
+	email = mike@mikeadmire.com
+[push]
+	default = simple
+[core]
+	excludesfile = /Users/mike/.gitignore_global
+	autocrlf = input
