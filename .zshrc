@@ -70,7 +70,7 @@ export PATH="$PATH:/usr/local/packer"
 fpath=(~/.zsh/Completion $fpath)
 
 ### CaptainU Chef ###
+export captainu_email=`git config --get user.email`
 export captainu_chef_user="mikeadmire"
-export captainu_chef_org="captainu"
 export captainu_chef_home="~/projects/captainu/chef-repo"
 ###
