@@ -61,8 +61,16 @@ eval "$(rbenv init -)"
 ### CaptainU Sub (cu) ###
 export PATH="$HOME/subs/bin:$PATH"
 eval "$($HOME/subs/bin/cu init -)"
+###
 
 ### Packer ###
 export PATH="$PATH:/usr/local/packer"
+###
 
 fpath=(~/.zsh/Completion $fpath)
+
+### CaptainU Chef ###
+export chef_user="mikeadmire"
+export chef_org="captainu"
+export chef_home="~/projects/captainu/chef-repo"
+###
