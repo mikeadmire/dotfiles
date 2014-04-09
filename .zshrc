@@ -46,6 +46,8 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 export GOROOT=/usr/local/go
 export GOARCH=amd64
 export GOOS=darwin
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 ###
 
 ### JavaScript ###
