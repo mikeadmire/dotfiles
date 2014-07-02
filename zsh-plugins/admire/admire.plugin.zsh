@@ -21,7 +21,7 @@ alias update-dotfiles='curl https://raw.github.com/mikeadmire/dotfiles/master/in
 alias update-dotvim='curl https://raw.github.com/mikeadmire/dotvim/master/install.sh -o - | sh'
 alias update-home_bin='curl https://raw.github.com/mikeadmire/home_bin/master/install.sh -o - | sh'
 
-alias rake="noglob rake"
+#alias rake="noglob rake"
 
 # turn off autocorrect for some commands
 alias knife='nocorrect knife'
