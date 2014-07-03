@@ -17,9 +17,9 @@ gclone() {
 }
 
 # dotfiles & dotvim
-alias update-dotfiles='curl https://raw.github.com/mikeadmire/dotfiles/master/install.sh -o - | sh'
-alias update-dotvim='curl https://raw.github.com/mikeadmire/dotvim/master/install.sh -o - | sh'
-alias update-home_bin='curl https://raw.github.com/mikeadmire/home_bin/master/install.sh -o - | sh'
+alias update-dotfiles='curl https://raw.githubusercontent.com/mikeadmire/dotfiles/master/install.sh -o - | sh'
+alias update-dotvim='curl https://raw.githubusercontent.com/mikeadmire/dotvim/master/install.sh -o - | sh'
+alias update-home_bin='curl https://raw.githubusercontent.com/mikeadmire/home_bin/master/install.sh -o - | sh'
 
 #alias rake="noglob rake"
 
