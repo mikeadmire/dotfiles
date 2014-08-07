@@ -38,7 +38,7 @@ source $ZSH/oh-my-zsh.sh
 
 bindkey -v
 export EDITOR='/usr/local/bin/vi'
-export PATH="$PATH:$HOME/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/packer"
+export PATH="$PATH:$HOME/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/packer:/Applications/Android Studio.app/sdk/tools:/Applications/Android Studio.app/sdk/platform-tools"
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
