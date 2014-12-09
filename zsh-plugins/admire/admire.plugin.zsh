@@ -27,10 +27,11 @@ alias update-home_bin='curl https://raw.githubusercontent.com/mikeadmire/home_bi
 alias knife='nocorrect knife'
 
 
+# Functions
+docker-ip() {
+  boot2docker ip 2> /dev/null
+}
+
 c() { cd ~/projects/mine/$1; }
 _c() { _files -W ~/projects/mine -/; }
 compdef _c c
-
-uu() { cd ~/projects/uu/$1; }
-_uu() { _files -W ~/projects/uu -/; }
-compdef _uu uu
