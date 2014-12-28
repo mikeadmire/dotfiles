@@ -61,8 +61,10 @@ eval "$(rbenv init -)"
 ###
 
 ### CaptainU Sub (cu) ###
-export PATH="$HOME/subs/bin:$PATH"
-eval "$($HOME/subs/bin/cu init -)"
+if [[ -d $HOME/subs ]]; then
+  export PATH="$HOME/subs/bin:$PATH"
+  eval "$($HOME/subs/bin/cu init -)"
+fi
 ###
 
 ### Packer ###
