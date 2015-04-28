@@ -37,7 +37,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 bindkey -v
-export EDITOR='/usr/local/bin/vi'
+export EDITOR='/usr/local/bin/vim'
 export PATH="$PATH:$HOME/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/packer:$HOME/android_sdk/tools:$HOME/android_sdk/platform-tools"
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
