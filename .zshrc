@@ -78,3 +78,9 @@ export captainu_email=`git config --get user.email`
 export captainu_chef_user="mikeadmire"
 export captainu_chef_home="~/projects/captainu/chef-repo"
 ###
+
+### Java ###
+export JAVA_HOME="/Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
+export PATH="$JAVA_HOME/bin":$PATH
+###
+
