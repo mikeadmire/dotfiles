@@ -84,3 +84,8 @@ export JAVA_HOME="/Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/H
 export PATH="$JAVA_HOME/bin":$PATH
 ###
 
+### Node ###
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+###
+
