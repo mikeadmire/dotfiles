@@ -89,3 +89,4 @@ export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 ###
 
+[[ -r $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
