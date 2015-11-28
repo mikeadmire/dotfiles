@@ -7,3 +7,4 @@
 - http://rubygems.org
 - http://gems.github.com
 :backtrace: false
+gem: --no-rdoc --no-ri
