@@ -25,6 +25,9 @@ alias update-home_bin='curl https://raw.githubusercontent.com/mikeadmire/home_bi
 
 # turn off autocorrect for some commands
 alias knife='nocorrect knife'
+alias knife='nocorrect awscu'
+alias knife='nocorrect docker'
+alias knife='nocorrect docker-compose'
 
 
 # Functions
