@@ -76,4 +76,10 @@ export NVM_DIR=~/.nvm
 source $NVM_DIR/nvm.sh
 ###
 
+### Google Cloud ###
+if [ -f '/usr/local/google-cloud-sdk/path.zsh.inc' ]; then source '/usr/local/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/usr/local/google-cloud-sdk/completion.zsh.inc' ]; then source '/usr/local/google-cloud-sdk/completion.zsh.inc'; fi
+###
+
 [[ -r $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
+
