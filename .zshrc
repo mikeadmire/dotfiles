@@ -60,24 +60,11 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 ###
 
-### CaptainU Sub (cu) ###
-if [[ -d $HOME/subs ]]; then
-  export PATH="$HOME/subs/bin:$PATH"
-  eval "$($HOME/subs/bin/cu init -)"
-fi
-###
-
 ### Packer ###
 export PATH="$PATH:/usr/local/packer"
 ###
 
 fpath=(~/.zsh/Completion $fpath)
-
-### CaptainU Chef ###
-export captainu_email=`git config --get user.email`
-export captainu_chef_user="mikeadmire"
-export captainu_chef_home="~/projects/captainu/chef-repo"
-###
 
 ### Java ###
 export JAVA_HOME="/Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
@@ -86,7 +73,13 @@ export PATH="$JAVA_HOME/bin":$PATH
 
 ### Node ###
 export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+source $NVM_DIR/nvm.sh
+###
+
+### Google Cloud ###
+if [ -f '/usr/local/google-cloud-sdk/path.zsh.inc' ]; then source '/usr/local/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/usr/local/google-cloud-sdk/completion.zsh.inc' ]; then source '/usr/local/google-cloud-sdk/completion.zsh.inc'; fi
 ###
 
 [[ -r $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
+

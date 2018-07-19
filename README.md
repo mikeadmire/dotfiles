@@ -1,4 +1,4 @@
-# dotfiles: My dotfiles for the Mac
+# dotfiles: My dotfiles
 
 This does not include my dot vim files. Those are managed
 in a seperate repo.
