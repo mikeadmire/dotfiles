@@ -38,3 +38,7 @@ docker-ip() {
 c() { cd ~/projects/mine/$1; }
 _c() { _files -W ~/projects/mine -/; }
 compdef _c c
+
+# K8s Aliases
+alias k='kubectl'
+alias mk='minikube'
