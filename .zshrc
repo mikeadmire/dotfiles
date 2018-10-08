@@ -73,7 +73,7 @@ export PATH="$JAVA_HOME/bin":$PATH
 
 ### Node ###
 export NVM_DIR=~/.nvm
-source $NVM_DIR/nvm.sh
+source "/usr/local/opt/nvm/nvm.sh"
 ###
 
 ### Google Cloud ###
