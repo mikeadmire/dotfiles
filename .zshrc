@@ -43,12 +43,12 @@ export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
 ### Go Language Settings ###
-export GOROOT=/usr/local/go
+export GOROOT="$(brew --prefix golang)/libexec"
 export GOARCH=amd64
 export GOOS=darwin
 export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
-###
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+######
 
 ### JavaScript ###
 export NODE_PATH=/usr/local/lib/node_modules:/usr/local/share/npm/lib/node_modules
