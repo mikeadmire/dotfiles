@@ -11,6 +11,7 @@ alias gst='git status'
 alias gm='git pull .' # git merge (usage: gm branchname)
 alias gsr='git svn rebase'
 alias gsdc='git svn dcommit'
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 
 gclone() {
   git svn clone svn+ssh://svn.uclick.com/usr/local/repo/$1 $2;
