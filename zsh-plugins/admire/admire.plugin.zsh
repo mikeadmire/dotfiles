@@ -23,9 +23,10 @@ alias update-home_bin='curl https://raw.githubusercontent.com/mikeadmire/home_bi
 alias k='kubectl'
 alias mk='minikube'
 
-# Golang
+# GOPATH navigation
 alias lsgp='ls $GOPATH/src/github.com/mikeadmire/'
-mgp() {mkdir $GOPATH/src/github.com/mikeadmire/$1; }
+alias cdgp='cd $GOPATH/src/github.com/mikeadmire/'
+mgp() { mkdir $GOPATH/src/github.com/mikeadmire/$1; }
 
 #alias rake="noglob rake"
 
