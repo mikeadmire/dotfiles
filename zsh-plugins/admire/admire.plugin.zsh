@@ -11,25 +11,22 @@ alias gst='git status'
 alias gm='git pull .' # git merge (usage: gm branchname)
 alias gsr='git svn rebase'
 alias gsdc='git svn dcommit'
-alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 
-gclone() {
-  git svn clone svn+ssh://svn.uclick.com/usr/local/repo/$1 $2;
-}
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 
 # dotfiles & dotvim
 alias update-dotfiles='curl https://raw.githubusercontent.com/mikeadmire/dotfiles/master/install.sh -o - | sh'
 alias update-dotvim='curl https://raw.githubusercontent.com/mikeadmire/dotvim/master/install.sh -o - | sh'
 alias update-home_bin='curl https://raw.githubusercontent.com/mikeadmire/home_bin/master/install.sh -o - | sh'
 
+# K8s Aliases
+alias k='kubectl'
+alias mk='minikube'
+
 #alias rake="noglob rake"
 
 # turn off autocorrect for some commands
 alias knife='nocorrect knife'
-alias knife='nocorrect awscu'
-alias knife='nocorrect docker'
-alias knife='nocorrect docker-compose'
-
 
 # Functions
 docker-ip() {
@@ -40,6 +37,4 @@ c() { cd ~/projects/mine/$1; }
 _c() { _files -W ~/projects/mine -/; }
 compdef _c c
 
-# K8s Aliases
-alias k='kubectl'
-alias mk='minikube'
+mgd() {mkdir $GOPATH/src/github.com/mikeadmire/$1; }
