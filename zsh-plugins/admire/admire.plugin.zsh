@@ -23,10 +23,15 @@ alias update-home_bin='curl https://raw.githubusercontent.com/mikeadmire/home_bi
 alias k='kubectl'
 alias mk='minikube'
 
+# Golang
+alias lsgp='ls $GOPATH/src/github.com/mikeadmire/'
+mgp() {mkdir $GOPATH/src/github.com/mikeadmire/$1; }
+
 #alias rake="noglob rake"
 
 # turn off autocorrect for some commands
 alias knife='nocorrect knife'
+
 
 # Functions
 docker-ip() {
@@ -37,4 +42,3 @@ c() { cd ~/projects/mine/$1; }
 _c() { _files -W ~/projects/mine -/; }
 compdef _c c
 
-mgd() {mkdir $GOPATH/src/github.com/mikeadmire/$1; }
