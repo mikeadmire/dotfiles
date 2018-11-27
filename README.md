@@ -11,3 +11,4 @@ To use the global .gitignore file
 
     $ git config --global core.excludesfile ~/.gitignore_global
 
+
