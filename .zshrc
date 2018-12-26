@@ -67,7 +67,7 @@ export PATH="$PATH:/usr/local/packer"
 fpath=(~/.zsh/Completion $fpath)
 
 ### Java ###
-export JAVA_HOME="/Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
+export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH="$JAVA_HOME/bin":$PATH
 ###
 
