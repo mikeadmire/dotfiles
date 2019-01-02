@@ -1,8 +1,10 @@
 [user]
-	name = Mike Admire
-	email = mike@mikeadmire.com
+    name = Mike Admire
+    email = mike@mikeadmire.com
 [push]
-	default = simple
+    default = simple
 [core]
-	excludesfile = /Users/mike/.gitignore_global
-	autocrlf = input
+    excludesfile = /Users/mike/.gitignore_global
+    autocrlf = input
+[url "git@github.com:"]
+    insteadOf = https://github.com/
