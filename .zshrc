@@ -38,7 +38,7 @@ source $ZSH/oh-my-zsh.sh
 
 bindkey -v
 export EDITOR='/usr/local/bin/vim'
-export PATH="$PATH:$HOME/bin:/usr/local/sbin:/usr/local/share/npm/bin:$HOME/Library/Python/3.7/bin"
+export PATH="$PATH:$HOME/bin:/usr/local/sbin:/usr/local/share/npm/bin:$HOME/Library/Python/3.7/bin:/usr/local/arachni/bin"
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
