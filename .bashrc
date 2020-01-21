@@ -108,3 +108,9 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
+    GIT_PROMPT_ONLY_IN_REPO=1
+    GIT_PROMPT_THEME=Single_line_Dark
+    source $HOME/.bash-git-prompt/gitprompt.sh
+fi

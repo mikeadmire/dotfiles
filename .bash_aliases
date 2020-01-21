@@ -1,7 +1,9 @@
 if [ -f ~/.bash_aliases.private ]; then source ~/.bash_aliases.private; fi
 
-alias tu='top -o cpu' #top cpu processes
-alias tm='top -o vsize' #top memory processes
+# dotfiles
+alias update-dotfiles='curl https://raw.githubusercontent.com/mikeadmire/dotfiles/master/install.sh -o - | sh'
+alias update-dotvim='curl https://raw.githubusercontent.com/mikeadmire/dotvim/master/install.sh -o - | sh'
+alias cleanup-dotfiles='rm .*.????????-??????; rm -rf dotfiles.????????-??????'
 
 # Git
 alias ga='git add .'
@@ -17,7 +19,7 @@ alias gm='git pull .' # git merge (usage: gm branchname)
 alias gsr='git svn rebase'
 alias gsdc='git svn dcommit'
 
-# dotfiles & dotvim
-alias update-dotfiles='curl https://raw.githubusercontent.com/mikeadmire/dotfiles/master/install.sh -o - | sh'
-alias update-dotvim='curl https://raw.githubusercontent.com/mikeadmire/dotvim/master/install.sh -o - | sh'
-alias cleanup-dotfiles='rm .*.????????-??????; rm -rf dotfiles.????????-??????'
+# Kubernetes
+alias k="kubectl"
+alias kmini="kubectl config use-context minikube"
+alias kdo="kubectl config use-context do-sfo2-starter"
