@@ -5,6 +5,9 @@ alias update-dotfiles='curl https://raw.githubusercontent.com/mikeadmire/dotfile
 alias update-dotvim='curl https://raw.githubusercontent.com/mikeadmire/dotvim/master/install.sh -o - | sh'
 alias cleanup-dotfiles='rm .*.????????-??????; rm -rf dotfiles.????????-??????'
 
+# General
+alias la='ls -la'
+
 # Git
 alias ga='git add .'
 alias gco='git checkout'
@@ -15,9 +18,6 @@ alias gd='git diff | vim'
 alias gl='git pull'
 alias gp='git push'
 alias gst='git status'
-alias gm='git pull .' # git merge (usage: gm branchname)
-alias gsr='git svn rebase'
-alias gsdc='git svn dcommit'
 
 # Kubernetes
 alias k="kubectl"
