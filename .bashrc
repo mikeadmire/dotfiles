@@ -4,7 +4,7 @@ set -o vi
 export EDITOR='/usr/bin/vim'
 export PATH="$PATH:~/.local/bin"
 
-if [ -f ~/.bash_aliases ]; then source ~/.bash_aliases; fi
+if [ -e ~/.aliases]; then source ~/.aliases; fi
 
 # If not running interactively, don't do anything
 # case $- in
