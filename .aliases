@@ -1,4 +1,4 @@
-if [ -f ~/.bash_aliases.private ]; then source ~/.bash_aliases.private; fi
+if [ -f ~/.aliases.private ]; then source ~/.aliases.private; fi
 
 # dotfiles
 alias update-dotfiles='curl https://raw.githubusercontent.com/mikeadmire/dotfiles/master/install.sh -o - | sh'

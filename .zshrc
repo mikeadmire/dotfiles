@@ -30,7 +30,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 #plugins=(git)
-plugins=(bundler admire)
+#plugins=(bundler admire)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -90,5 +90,6 @@ if [ -f '/usr/local/google-cloud-sdk/path.zsh.inc' ]; then source '/usr/local/go
 if [ -f '/usr/local/google-cloud-sdk/completion.zsh.inc' ]; then source '/usr/local/google-cloud-sdk/completion.zsh.inc'; fi
 ###
 
+[[ -f $HOME/.aliases ]] && source $HOME/.aliases
 [[ -r $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
 
