@@ -50,9 +50,9 @@ export GOPATH=$HOME/go
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 ######
 
-### JavaScript ###
-export NODE_PATH=/usr/local/lib/node_modules:/usr/local/share/npm/lib/node_modules:`npm root -g`
-[[ -r $HOME/.nvm/nvm.sh ]] && source $HOME/.nvm/nvm.sh
+### NVM ###
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 ###
 
 ### rbenv ###
@@ -67,13 +67,8 @@ export PATH="$PATH:/usr/local/packer"
 fpath=(~/.zsh/Completion $fpath)
 
 ### Java ###
-export JAVA_HOME=$(/usr/libexec/java_home)
-export PATH="$JAVA_HOME/bin":$PATH
-###
-
-### Node ###
-export NVM_DIR=~/.nvm
-source "/usr/local/opt/nvm/nvm.sh"
+#export JAVA_HOME=$(/usr/libexec/java_home)
+#export PATH="$JAVA_HOME/bin":$PATH
 ###
 
 ### Serverless ###
