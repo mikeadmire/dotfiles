@@ -32,7 +32,7 @@ ZSH_THEME="robbyrussell"
 #plugins=(git)
 #plugins=(bundler admire)
 
-#source $ZSH/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
