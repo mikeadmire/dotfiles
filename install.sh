@@ -3,7 +3,7 @@ cd ~
 if [ -d ~/dotfiles ]; then
   mv ~/dotfiles ~/dotfiles.$date
 fi
-git clone git://github.com/mikeadmire/dotfiles.git ~/dotfiles
+git clone git@github.com:mikeadmire/dotfiles.git ~/dotfiles
 
 # sym link dotfiles to home directory
 for i in .aliases .bashrc .zshrc .gitignore_global .gitconfig
