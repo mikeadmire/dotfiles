@@ -85,6 +85,10 @@ if [ -f '/usr/local/google-cloud-sdk/path.zsh.inc' ]; then source '/usr/local/go
 if [ -f '/usr/local/google-cloud-sdk/completion.zsh.inc' ]; then source '/usr/local/google-cloud-sdk/completion.zsh.inc'; fi
 ###
 
+### K8s ###
+[[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
+###
+
 [[ -f $HOME/.aliases ]] && source $HOME/.aliases
 [[ -r $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
 
