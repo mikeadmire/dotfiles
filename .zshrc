@@ -89,6 +89,12 @@ if [ -f '/usr/local/google-cloud-sdk/completion.zsh.inc' ]; then source '/usr/lo
 [[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
 ###
 
+### NVM ###
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+###
+
 [[ -f $HOME/.aliases ]] && source $HOME/.aliases
 [[ -r $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
 
