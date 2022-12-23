@@ -98,3 +98,6 @@ export NVM_DIR="$HOME/.nvm"
 [[ -f $HOME/.aliases ]] && source $HOME/.aliases
 [[ -r $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
 
+### PYENV ###
+eval "$(pyenv init --path)"
+###
