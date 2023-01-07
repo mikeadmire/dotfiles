@@ -101,3 +101,12 @@ export NVM_DIR="$HOME/.nvm"
 ### PYENV ###
 eval "$(pyenv init --path)"
 ###
+
+### zsh auto completions ###
+if type brew &>/dev/null; then
+FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+autoload -Uz compinit
+compinit
+fi
+###
