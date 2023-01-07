@@ -21,5 +21,5 @@ alias gst='git status'
 
 # Kubernetes
 alias k="kubectl"
-alias kmini="kubectl config use-context minikube"
-alias kdo="kubectl config use-context do-sfo2-starter"
+alias kprom="kubectl port-forward svc/kube-prometheus-stack-prometheus 9090:9090 -n kube-prometheus-stack"
+alias kgraf="kubectl port-forward svc/kube-prometheus-stack-grafana 3000:80 -n kube-prometheus-stack"
