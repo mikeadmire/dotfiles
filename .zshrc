@@ -23,7 +23,9 @@ export NVM_DIR="$HOME/.nvm"
 ###
 
 ### PYENV ###
-eval "$(pyenv init --path)"
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 ###
 
 ### K8s ###
