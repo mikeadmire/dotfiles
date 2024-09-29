@@ -114,3 +114,12 @@ if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
     GIT_PROMPT_THEME=Single_line_Dark
     source $HOME/.bash-git-prompt/gitprompt.sh
 fi
+
+
+eval "$(rbenv init -)"
+
+export GOENV_ROOT="$HOME/.goenv"
+export PATH="$GOENV_ROOT/bin:$PATH"
+eval "$(goenv init -)"
+export PATH="$GOROOT/bin:$PATH"
+export PATH="$GOPATH/bin:$PATH"
