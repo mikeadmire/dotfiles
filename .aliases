@@ -22,9 +22,5 @@ alias gst='git status'
 # Kubernetes
 alias k="kubectl"
 alias kx="kubectx"
-alias kpf-kafka="kubectl port-forward svc/kafka-service 9092:9092 -n kafka"
-alias kpf-zk="kubectl port-forward svc/zookeeper-service 2181:2181 -n kafka"
-alias kpf-influx="kubectl port-forward svc/influxdb 8086:8086 -n influxdb"
-
-# Ruby & Rails
-alias rs="rails server -b 0.0.0.0"
+alias pf-prom="kubectl --namespace prometheus port-forward deploy/prometheus-server 9090"
+alias pf-graf="kubectl --namespace grafana port-forward deploy/grafana 3000"
